@@ -1,0 +1,6 @@
+1 Just use one folder active
+2 Set xonfig to user.name and user.email
+3 Create branch
+4 Add remote
+5 Select PULLPUSH and not PUSH
+6 Add file to stage change if modified
