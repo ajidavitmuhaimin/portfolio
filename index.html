@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+     <title>Aji Davit Muhaimin</title>
+</head>
+<body>
+     <br><br><br><br><br><br>
+     <img src="githubpp.png" alt="my pic" id="myPic"/>
+     <br>
+     <h1 id="myName">Aji Davit Muhaimin</h1>
+     <h6 id="ajwd">A junior web developer</h6>
+     <br><br><br><br><br><br><br><br><br>
+     <p id="stkm">Scroll to know more</p>
+     <br>
+     <h2 class="itemHead" id="aboutSection">About</h2>
+     <p>Welcome to my portfolio!</p>
+     <p>I'm a passionate developer with expertise on HTML, CSS, and JavaScript for building responsive and dynamic web interface. I'm spesialize in backend development using Go to create efficient and scalable APIs. Little experience in working with database like SQLite and MySQL for reliable data management. Enjoy solving problems for building seamless user experience from front to back. Feel free to explore my work!</p>
+     <hr>
+     <br>
+     <h2 class="itemHead" id="skillSection">My Skills</h2>
+     <div id="skillBadgeContainer">
+          <img loading="lazy" src="HTML5_logo_and_wordmark.svg" alt="HTML badge" class="skillBadge"/>
+          <img loading="lazy" src="Official_CSS_Logo.svg" alt="CSS badge" class="skillBadge"/>
+          <img loading="lazy" src="Unofficial_JavaScript_Logo_2.svg" alt="JavaScript badge" class="skillBadge"/>
+          <img loading="lazy" src="Go_Logo_Blue.svg" alt="Go badge" class="skillBadge"/>
+          <img loading="lazy" src="Cpp_Logo.svg" alt="C++ badge" class="skillBadge"/>
+          <img loading="lazy" src="sqlite-icon.svg" alt="SQLite badge" class="skillBadge"/>
+          <img loading="lazy" src="mysql-icon.svg" alt="MySQL badge" class="skillBadge"/>
+     </div>
+     <hr>
+     <br>
+     <h2 class="itemHead" id="projectSection">My Works</h2>
+     <a href="#"><h3>Lorem1</h3></a>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo eos necessitatibus aliquam temporibus, cupiditate quae. Dignissimos, ex totam esse libero minima dicta harum numquam architecto quos magnam aspernatur pariatur? Minima.</p>
+     <a href="#Lorem1"><h3>Lorem2</h3></a>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, eius, excepturi. Quo dolorem explicabo incidunt odit voluptas qui unde praesentium maxime quos aut, laudantium odio, voluptate soluta dolore adipisci mollitia!</p>
+     <hr>
+     <br>
+     <h2 class="itemHead" id="contactSection">Contacts</h2>
+     <h5>Email: <a href="mailto:ajidavitmuhaimin@yahoo.com">ajidavitmuhaimin@yahoo.com</a></h5>
+     <h5>WhatsApp: <a href="https://wa.me/+6285389312005">+62 853-8931-2005</a></h5>
+     <h5>Github: <a href="https://github.com/ajidavitmuhaimin">ajidavitmuhaimin</a></h5>
+     <h5>Instagram: <a href="https://instagram.com/ajidavitmuhaimin">ajidavitmuhaimin</a></h5>
+     <div id="bottomBar">
+          <i class="bi-person-fill" id="aboutBtn"></i>
+          <i class="bi-stars" id="skillBtn"></i>
+          <i class="bi-kanban" id="projectBtn"></i>
+          <i class="bi-person-lines-fill" id="contactBtn"></i>
+          <h6>About</h6>
+          <h6>Skills</h6>
+          <h6>Projects</h6>
+          <h6>Contacts</h6>
+     </div>
+     <br><br>
+</body>
+</html>
+<style>
+     :root{
+          --backgroundColor: #f0f0f0;
+          --c1: #DB6FB0;
+     }
+     body{
+          scroll-behavior: smooth;
+          transition: 400ms;
+          padding: 20px;
+          background: var(--backgroundColor);
+     }
+     #myPic{
+          width: calc(420px/2);
+          height: calc(420px/2);
+          position: relative;
+          left: 50%;
+          transform: translateX(-50%);
+          border-radius: 10px;
+     }
+     #myName{
+          font-family: "Lexend",sans-serif;
+          color: var(--c1);
+          text-align: center;
+     }
+     #ajwd{
+          text-align: center;
+     }
+     #stkm{
+          text-align: center;
+     }
+     .itemHead{
+          color: var(--c1);
+          font-family: "Noto Sans", sans-serif;
+     }
+     p{
+          font-family: "Noto Sans", sans-serif;
+     }
+     .skillBadge{
+          width: 50px;
+          height: 50px;
+     }
+     #skillBadgeContainer{
+          transition: 400ms;
+          width: 100%;
+          height: auto;
+          /*border: 1px solid grey;*/
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-template-rows: auto;
+          place-items: center;
+          grid-gap: 30px;
+     }
+     a{
+          color: var(--c1);
+          text-decoration: underline;
+          font-family: "Noto Sans", sans-serif;
+     }
+     h5,h6{
+          font-family: "Noto Sans", sans-serif;
+     }
+     #bottomBar{
+          transition: 400ms;
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 70px;
+          background: rgba(240, 240, 240, 0.4);
+          backdrop-filter: blur(5px);
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-template-rows: 80% 20%;
+          place-items: center;
+     }
+     /**/
+     @media screen and (min-width: 1200px){
+          #skillBadgeContainer{
+               grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+          }
+          #bottomBar{
+               width: 300px;
+          }
+     }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  WebFont.load({
+    google: {
+      families: ['Lexend', 'Noto Sans']
+    }
+  });
+  var aboutBtn=document.getElementById("aboutBtn");
+  var skillBtn=document.getElementById("skillBtn");
+  var projectBtn=document.getElementById("projectBtn");
+  var contactBtn=document.getElementById("contactBtn");
+  var aboutSection=document.getElementById("aboutSection");
+  var skillSection=document.getElementById("skillSection");
+  var projectSection=document.getElementById("projectSection");
+  var contactSection=document.getElementById("contactSection");
+  aboutBtn.onclick=()=>{
+       aboutSection.scrollIntoView({
+            behavior: "smooth"
+       });
+  }
+  skillBtn.onclick=()=>{
+       skillSection.scrollIntoView({
+            behavior: "smooth"
+       });
+  }
+  projectBtn.onclick=()=>{
+       projectSection.scrollIntoView({
+            behavior: "smooth"
+       });
+  }
+  contactBtn.onclick=()=>{
+       contactSection.scrollIntoView({
+            behavior: "smooth"
+       });
+  }
+  //console.log(skillSection.scrollIntoView());
+</script>
